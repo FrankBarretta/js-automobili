@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Vendita Automobili</title>
+</head>
+
+<body>
+
+    <h1 class="text-center">Automobili in Vendita</h1>
+
+    <table class="my-5 table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modello</th>
+                <th scope="col">Alimentazione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Qui viene injectato il codice HTML con JavaScript -->
+        </tbody>
+    </table>
+
+
+
+
+    <form class="m-5">
+        <div class="mb-3">
+            <label for="inserisciMarca" class="form-label">Marca</label>
+            <input type="text" class="form-control" id="inserisciMarca">
+        </div>
+
+        <div class="mb-3">
+            <label for="inserisciModello" class="form-label">Modello</label>
+            <input type="text" class="form-control" id="inserisciModello">
+        </div>
+
+        <label for="inserisciModello" class="form-label">Alimentazione</label>
+        <select id="inserisciAlimentazione" class="form-select">
+            <option value="Benzina">Benzina</option>
+            <option value="Diesel">Diesel</option>
+            <option value="GPL">GPL</option>
+            <option value="Ibrida">Ibrida</option>
+            <option value="Elettrica">Elettrica</option>
+        </select>
+    </form>
+
+    <button type="submit" onclick="createAuto()" class="btn btn-primary">Inserisci</button>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
